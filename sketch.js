@@ -28,9 +28,10 @@ function setup() {
 }
 
 function draw() {
-    if (prevMin != minute()) {
-        console.log(minute)
-        prevMin = minute()
+    let min = minute()
+    if (prevMin != min) {
+        console.log(min)
+        prevMin = min
     }
 
     background(bgColor);
@@ -55,7 +56,7 @@ function draw() {
     }
     
     //it takes 60 seconds for one flower to bloom
-    let min = minute();
+    
     for (let i = 0; i <= min; i++){
         if (i == min) {
             flowers[i].bloom();
