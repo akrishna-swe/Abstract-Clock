@@ -35,7 +35,7 @@ function draw() {
     }
 
     background(bgColor);
-    x = hour() * (winWidth/24);
+    x = (hour()+ min/60) * (winWidth/24) ;
     y = winHeight/2 -100
 
     noStroke();
